@@ -1,0 +1,54 @@
+.main-header .main-menu .navigation>li:hover>a,
+.main-header .main-menu .navigation>li.current>a {
+    opacity: 1;
+    /* color: var(--main-color); */
+}
+
+.main-header .main-menu .navigation>li>ul {
+    background-color: #4D5498;
+    position: absolute;
+    right: auto;
+    width: auto;
+    padding: 0;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin-top: 0;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    z-index: 9;
+    box-shadow: 10px 10px 20px rgb(0 0 0 / 10%);
+    border: none;
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.main-header .main-menu .navigation>li>ul>li {
+    list-style: none;
+}
+
+.main-header .main-menu .navigation>li>ul>li a {
+    box-sizing: border-box;
+    width: 100%;
+    white-space: nowrap;
+    margin-left: 0 !important;
+    color: #fff;
+}
+
+.main-header .main-menu .navigation>li>ul>li a:hover {
+    color: #fff;
+    
+}
+
+.main-header .main-menu .navigation>li.menu-item-has-children:hover>ul {
+ 
+}
+
+.main-header .main-menu .navigation>li>ul>li.menu-item-has-children-submenu:nth-child(1) a {
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.main-header .main-menu .navigation>li>ul>li.menu-item-has-children-submenu:last-child a {
+    border-radius: 0 0 0.5rem 0.5rem;
+}
